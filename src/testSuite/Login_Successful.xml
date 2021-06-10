@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="listener.PageListener" />
+	</listeners>
+  		<test thread-count="5" name="Login: Login Successful" preserve-order="true">
+    		<classes>
+     			 <class name="TestClass.LoginTest">
+      				<methods> 
+      					<include name="goToLoginPage"/>
+						<include name="LoginSuccessful"/>
+<!--      					<include name="LoginInvalidUsernameMin"> </include> -->
+<!--      					<include name="LoginInvalidUsernameMax"> </include> -->
+<!--      					<include name="LoginInvalidPasswordMin"> </include> -->
+<!--      					<include name="LoginInvalidPasswordMax"> </include> -->
+<!--      					<include name="LoginValidUsernamePassword"> </include> 	-->
+      				</methods>
+     			 </class>
+     		</classes>
+  	</test> <!-- Tests -->
+</suite> <!-- Suite -->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite (0)]">
+  <listeners>
+    <listener class-name="listener.PageListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="BPJS Test(failed)">
+    <classes>
+      <class name="TestClass.BpjsTest">
+        <methods>
+          <include name="clickBayar"/>
+          <include name="inputValidnNomorBpjs"/>
+          <include name="goToPaymentCenter"/>
+          <include name="validateInvalidMaxNomorBpjs"/>
+          <include name="TQPageTest"/>
+          <include name="inputInvalidMinNomorBpjs"/>
+          <include name="startApps"/>
+          <include name="DaftarTrxTest"/>
+          <include name="inputInvalidMaxnNomorBpjs"/>
+          <include name="goToBPJSTest"/>
+          <include name="goToBpjsKesehatan"/>
+          <include name="PilihAlatBayar"/>
+          <include name="closeApp"/>
+          <include name="validateInvalidMinNomorBpjs"/>
+          <include name="validateValidNomorBpjs"/>
+        </methods>
+      </class> <!-- TestClass.BpjsTest -->
+    </classes>
+  </test> <!-- BPJS Test(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->
